@@ -30,7 +30,7 @@ jQuery(function () {
 
     $("#locale-switch").on('change',function (e) {
       var switched_locale = $(this).val();
-      var destination = window.location.pathname.replace(current_locale, '');
+      var destination = window.location.pathname.replace(current_locale, '').replace("/",'');
       
       destination = '/' + switched_locale + destination;
       
